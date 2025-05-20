@@ -1,7 +1,9 @@
 import { nanoid } from "nanoid";
 import { useForm } from "react-hook-form";
-const SignUp = (props) => {
-  const { toggler, settoggler, users, setusers } = props;
+import { UserContext } from "../Context/Context";
+import { useContext } from "react";
+const SignUp = () => {
+  const { toggler, settoggler, users, setusers } = useContext(UserContext);
   // console.log(props)
 
   const {
